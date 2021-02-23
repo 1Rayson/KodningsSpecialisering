@@ -1,4 +1,5 @@
 /* Global styles */
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 
 * {
   margin: 0;
@@ -8,13 +9,116 @@
   font-family: "poppins", sans-serif;
 }
 
-/*dropdown menu header */
+body {
+  background-color: #afa6a6;
+}
+
+/* Header dropdown menu */
+.dropdown-menu {
+  background: #1b1b1b;
+}
+
+.dropdown-menu:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.page-title {
+  float: left;
+  color: #afa6a6;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 70px;
+  padding-left: 60px;
+}
+
+.dropdown-menu ul {
+  float: right;
+  list-style: none;
+  margin-right: 40px;
+  position: relative;
+}
+
+.dropdown-menu ul li {
+  display: inline-block;
+  float: left;
+  background: #1b1b1b;
+  margin: 0 5px;
+}
+
+.dropdown-menu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 71px;
+  font-size: 18px;
+  padding: 8px 15px;
+}
+
+.dropdown-menu ul li a:hover {
+  box-shadow: 0 0 5px #33ffff, 0 0 5px #66ffff;
+  border-radius: 5px;
+  color: cyan;
+}
+
+.dropdown-menu ul ul li a:hover {
+  color: cyan;
+  box-shadow: none;
+}
+
+.dropdown-menu ul ul {
+  position: absolute;
+  top: 90px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  border-top: 3px solid cyan;
+}
+
+.dropdown-menu ul ul ul {
+  border-top: none;
+}
+
+.dropdown-menu ul ul li {
+  position: relative;
+  margin: 0px;
+  width: 150px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-menu ul li:hover > ul {
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-menu ul ul li a {
+  line-height: 50px;
+  font-size: 16px;
+}
+
+.dropdown-menu ul ul ul li a {
+  font-size: 16px;
+}
+
+.dropdown-menu ul ul ul li {
+  position: relative;
+  top: -70px;
+  left: 150px;
+}
+
+.fa-plus {
+  margin-left: 5px;
+}
 
 /* Slide in menu */
 .btn {
   position: absolute;
-  top: 15px;
-  left: 45px;
+  top: 85px;
+  left: 60px;
   height: 45px;
   width: 45px;
   background: #1b1b1b;
@@ -43,7 +147,6 @@
   position: fixed;
   width: 250px;
   height: 100%;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 1);
   left: -250px;
   background: #1b1b1bfa;
   transition: left 0.4s ease-in-out;
@@ -63,19 +166,19 @@
   font-weight: 600;
 }
 
-nav ul {
+.sidebar ul {
   background: #171717;
   width: 100%;
   height: 100%;
   list-style: none;
 }
 
-nav ul li {
+.sidebar ul li {
   line-height: 60px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-nav ul li a {
+.sidebar ul li a {
   position: relative;
   text-decoration: none;
   font-size: 18px;
@@ -87,52 +190,51 @@ nav ul li a {
   border-left: 3px solid transparent;
 }
 
-nav ul li.active a {
-  /*brug hover til desktop size*/
+.sidebar ul li.active a {
   color: cyan;
   background: #1e1e1e;
   border-left-color: cyan;
 }
 
-nav ul ul {
+.sidebar ul ul {
   position: static;
   display: none;
 }
 
-nav ul .group1-show.show {
+.sidebar ul .group1-show.show {
   display: block;
 }
 
-nav ul .group2-show.show1 {
+.sidebar ul .group2-show.show1 {
   display: block;
 }
 
-nav ul .group3-show.show2 {
+.sidebar ul .group3-show.show2 {
   display: block;
 }
 
-nav ul ul li {
+.sidebar ul ul li {
   line-height: 42px;
   border-bottom: none;
 }
 
-nav ul ul li a {
+.sidebar ul ul li a {
   font-size: 15px;
   padding-left: 80px;
 }
 
-nav ul li.active ul li a {
+.sidebar ul li.active ul li a {
   color: #e6e6e6;
   background: #1b1b1b;
   border-left-color: transparent;
 }
 
-nav ul ul li a:focus {
+.sidebar ul ul li a:focus {
   color: cyan !important;
   background: #1e1e1e !important;
 }
 
-nav ul li a span {
+.sidebar ul li a span {
   position: absolute;
   top: 50%;
   right: 20px;
@@ -141,15 +243,14 @@ nav ul li a span {
   color: #ffffff;
 }
 
-nav ul li a span.rotate {
-  /* brug hover til desktop size???*/
+.sidebar ul li a span.rotate {
   transform: translateY(-50%) rotate(-180deg);
 }
 /* Slide in menu tablet styles */
 
 /* Slide in menu desktop styles */
 @media screen and (min-width: 1100px) {
-  nav ul ul li a:hover {
+  .sidebar ul ul li a:hover {
     color: cyan !important;
     background: #1e1e1e !important;
   }
@@ -157,4 +258,4 @@ nav ul li a span.rotate {
 
 /* background image manual slideshow */
 
-/* caruselle image slideshow */
+/* carouselle image slideshow */

@@ -10,8 +10,53 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   </head>
   <body>
-    <nav>
-      <h1 class="page-title">TobiasHansen</h1>
+    <!--Skriv classen "sidebar ind i stedet for nav på alle de steder det bliver brugt i css stylesheetet-->
+    <nav class="dropdown-menu">
+      <h1 class="page-title">HavgårdCoding</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="#">Submenus</a>
+          <ul>
+            <li><a href="#">Lorem ipsum</a></li>
+            <li><a href="#">Lorem ipsum</a></li>
+            <li><a href="#">Lorem ipsum</a></li>
+            <li>
+              <a href="#"
+                >Hover Here
+                <span class="fa fa-plus"></span>
+              </a>
+              <ul>
+                <li><a href="#">Submenu-1</a></li>
+                <li><a href="#">Submenu-2</a></li>
+                <li><a href="#">Submenu-3</a></li>
+                <li><a href="#">Submenu-4</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Anders & Tine</a>
+          <ul>
+            <li><a href="#">Anders page</a></li>
+            <li><a href="#">Tine's Page</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Mira & Celine</a>
+          <ul>
+            <li><a href="#">Mira's page</a></li>
+            <li><a href="#">Celine's page</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Lisa & Mikkel</a>
+          <ul>
+            <li><a href="#">Lisa's page</a></li>
+            <li><a href="#">Mikkel's page</a></li>
+          </ul>
+        </li>
+      </ul>
     </nav>
     <div class="btn">
       <span class="fas fa-bars"></span>
