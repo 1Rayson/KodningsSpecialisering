@@ -134,6 +134,7 @@ body {
   width: 20%;
   transition: 2s;
   position: relative;
+  z-index: -1;
 }
 
 .slide-title {
