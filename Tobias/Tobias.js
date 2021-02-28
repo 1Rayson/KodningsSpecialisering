@@ -22,3 +22,13 @@ $('.group3-btn').click(function(){
 $('nav ul li').click(function(){
     $(this).addClass("active").siblings().removeClass("active");
 });
+
+// Automatic image slider
+let counter = 1;
+setInterval(function(){
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if(counter > 4) {
+        counter = 1;
+    }
+},5000);
