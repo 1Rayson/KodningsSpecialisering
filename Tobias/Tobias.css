@@ -247,7 +247,6 @@ body {
 .sidebar ul li a span.rotate {
   transform: translateY(-50%) rotate(-180deg);
 }
-/* Slide in menu tablet styles */
 
 /* Slide in menu desktop styles */
 @media screen and (min-width: 1100px) {
@@ -279,13 +278,51 @@ body {
   z-index: -1;
 }
 
-.slide-title {
-  position: absolute;
-}
-
 .slide img {
   width: 100vw;
   height: 91vh;
+}
+
+/* Picture text and info styling */
+/* picture 1 -text styling */
+.slide__title {
+  position: absolute;
+  font-size: 4em;
+  color: #ffffff;
+  border: solid 5px #afa6a6;
+  padding: 40px;
+  width: 376.29px;
+  background: rgba(0, 0, 0, 0.5);
+  line-height: 60px;
+  right: 10%;
+  top: 15%;
+  font-family: monospaces;
+}
+
+.slide__paragraph {
+  position: absolute;
+  right: 10%;
+  top: 47%;
+  width: 376.29px;
+  font-size: 1.1em;
+  color: #ffffff;
+  text-align: center;
+}
+
+.slide__comment {
+  position: absolute;
+  right: 12%;
+  top: 64%;
+  width: 300px;
+  font-size: 0.8em;
+  color: #afa6a6;
+  text-align: center;
+  text-shadow: 2px 2px #000000;
+}
+
+/* picture 2 -text styling*/
+.slide__title-2 {
+  position: absolute;
 }
 
 /* CSS for manual slide navigation */
@@ -298,7 +335,7 @@ body {
 }
 
 .manual-btn {
-  border: 2px solid cyan;
+  border: 2px solid #ffffff;
   padding: 7px;
   border-radius: 50%;
   cursor: pointer;
@@ -310,7 +347,7 @@ body {
 }
 
 .manual-btn:hover {
-  background: cyan;
+  background: #ffffff;
 }
 
 #radio1:checked ~ .first {
@@ -339,7 +376,7 @@ body {
 }
 
 .navigation-auto div {
-  border: 2px solid cyan;
+  border: 2px solid #ffffff;
   padding: 7px;
   border-radius: 50%;
   cursor: pointer;
@@ -351,19 +388,19 @@ body {
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1 {
-  background: cyan;
+  background: #ffffff;
 }
 
 #radio2:checked ~ .navigation-auto .auto-btn2 {
-  background: cyan;
+  background: #ffffff;
 }
 
 #radio3:checked ~ .navigation-auto .auto-btn3 {
-  background: cyan;
+  background: #ffffff;
 }
 
 #radio4:checked ~ .navigation-auto .auto-btn4 {
-  background: cyan;
+  background: #ffffff;
 }
 
 /* carouselle image slideshow */
