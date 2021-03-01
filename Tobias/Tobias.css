@@ -17,6 +17,9 @@ body {
 /* Header dropdown menu */
 .dropdown-menu {
   background: #1b1b1b;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 .dropdown-menu:after {
@@ -117,7 +120,7 @@ body {
 
 /* Slide in menu */
 .btn {
-  position: absolute;
+  position: fixed;
   top: 85px;
   left: 60px;
   height: 45px;
@@ -151,6 +154,7 @@ body {
   left: -250px;
   background: #1b1b1b;
   transition: left 0.4s ease-in-out;
+  margin-top: 70.4px;
 }
 
 .sidebar.show {
@@ -265,6 +269,7 @@ body {
   width: 500%;
   height: 100%;
   display: flex;
+  margin-top: 70.4px;
 }
 
 .slides input {
@@ -307,22 +312,60 @@ body {
   font-size: 1.1em;
   color: #ffffff;
   text-align: center;
+  border-top: solid 1px #ffffff;
+  padding-top: 5px;
 }
 
 .slide__comment {
   position: absolute;
-  right: 12%;
-  top: 64%;
+  right: 12.5%;
+  top: 63.5%;
   width: 300px;
   font-size: 0.8em;
-  color: #afa6a6;
+  color: #ffffff;
   text-align: center;
-  text-shadow: 2px 2px #000000;
+  border-top: solid 1px #ffffff;
+  padding-top: 5px;
 }
 
 /* picture 2 -text styling*/
 .slide__title-2 {
   position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 20%;
+  font-size: 3.5em;
+  color: #ffffff;
+  border-top: solid 3px #ffffff;
+}
+
+.slide__paragraph-2 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 34%;
+  font-size: 1em;
+  text-align: center;
+  color: #ffffff;
+  background: rgba(1, 1, 1, 0.5);
+  width: 500px;
+  padding: 10px;
+  border: solid 3px #ffffff;
+  border-radius: 10px;
+}
+
+.slide__title-2--bottom {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 55%;
+  font-size: 3.5em;
+  color: #ffffff;
+  border-bottom: solid 3px #ffffff;
+}
+
+.slide__title-2--color {
+  color: black;
 }
 
 /* CSS for manual slide navigation */
