@@ -61,13 +61,13 @@ body {
 }
 
 .dropdown-menu ul li a:hover {
-  box-shadow: 0 0 5px #33ffff, 0 0 5px #66ffff;
+  box-shadow: 0 0 5px #dcae96, 0 0 5px #ddbfaf;
   border-radius: 5px;
-  color: cyan;
+  color: #dcae96;
 }
 
 .dropdown-menu ul ul li a:hover {
-  color: cyan;
+  color: #dcae96;
   box-shadow: none;
 }
 
@@ -77,7 +77,7 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: 0.3s;
-  border-top: 3px solid cyan;
+  border-top: 3px solid #dcae96;
 }
 
 .dropdown-menu ul ul ul {
@@ -196,9 +196,9 @@ body {
 }
 
 .sidebar ul li.active a {
-  color: cyan;
+  color: #dcae96;
   background: #1e1e1e;
-  border-left-color: cyan;
+  border-left-color: #dcae96;
 }
 
 .sidebar ul ul {
@@ -235,7 +235,7 @@ body {
 }
 
 .sidebar ul ul li a:focus {
-  color: cyan !important;
+  color: #dcae96 !important;
   background: #1e1e1e !important;
 }
 
@@ -252,10 +252,10 @@ body {
   transform: translateY(-50%) rotate(-180deg);
 }
 
-/* Slide in menu desktop styles */
+/* Sidebar menu desktop styles */
 @media screen and (min-width: 1100px) {
   .sidebar ul ul li a:hover {
-    color: cyan !important;
+    color: #dcae96 !important;
     background: #1e1e1e !important;
   }
 }
@@ -284,88 +284,9 @@ body {
 }
 
 .slide img {
-  width: 100vw;
+  width: 100%;
   height: 91vh;
-}
-
-/* Picture text and info styling */
-/* picture 1 -text styling */
-.slide__title {
-  position: absolute;
-  font-size: 4em;
-  color: #ffffff;
-  border: solid 5px #afa6a6;
-  padding: 40px;
-  width: 376.29px;
-  background: rgba(0, 0, 0, 0.5);
-  line-height: 60px;
-  right: 10%;
-  top: 15%;
-  font-family: monospaces;
-}
-
-.slide__paragraph {
-  position: absolute;
-  right: 10%;
-  top: 47%;
-  width: 376.29px;
-  font-size: 1.1em;
-  color: #ffffff;
-  text-align: center;
-  border-top: solid 1px #ffffff;
-  padding-top: 5px;
-}
-
-.slide__comment {
-  position: absolute;
-  right: 12.5%;
-  top: 63.5%;
-  width: 300px;
-  font-size: 0.8em;
-  color: #ffffff;
-  text-align: center;
-  border-top: solid 1px #ffffff;
-  padding-top: 5px;
-}
-
-/* picture 2 -text styling*/
-.slide__title-2 {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-  top: 20%;
-  font-size: 3.5em;
-  color: #ffffff;
-  border-top: solid 3px #ffffff;
-}
-
-.slide__paragraph-2 {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-  top: 34%;
-  font-size: 1em;
-  text-align: center;
-  color: #ffffff;
-  background: rgba(1, 1, 1, 0.5);
-  width: 500px;
-  padding: 10px;
-  border: solid 3px #ffffff;
-  border-radius: 10px;
-}
-
-.slide__title-2--bottom {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-  top: 55%;
-  font-size: 3.5em;
-  color: #ffffff;
-  border-bottom: solid 3px #ffffff;
-}
-
-.slide__title-2--color {
-  color: black;
+  object-fit: cover;
 }
 
 /* CSS for manual slide navigation */
@@ -446,4 +367,82 @@ body {
   background: #ffffff;
 }
 
-/* carouselle image slideshow */
+/* Picture text and info styling */
+/* picture 1 -text styling */
+.slide__title {
+  position: absolute;
+  font-size: 4em;
+  color: #ffffff;
+  border: solid 5px #ffffff;
+  padding: 40px;
+  width: 376.29px;
+  background: rgba(0, 0, 0, 0.5);
+  line-height: 60px;
+  right: 10%;
+  top: 15%;
+  font-family: monospaces;
+}
+
+.slide__paragraph {
+  position: absolute;
+  right: 10%;
+  top: 47%;
+  width: 376.29px;
+  font-size: 1.1em;
+  color: #ffffff;
+  text-align: center;
+  border-top: solid 1px #dcae96;
+  padding-top: 5px;
+}
+
+.slide__comment {
+  position: absolute;
+  right: 12.5%;
+  top: 63.5%;
+  width: 300px;
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: center;
+  border-top: solid 1px #dcae96;
+  padding-top: 5px;
+}
+
+/* picture 2 -text styling*/
+.slide__title-2 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 20%;
+  font-size: 3.5em;
+  color: #ffffff;
+  border-top: solid 3px #ffffff;
+}
+
+.slide__paragraph-2 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 34%;
+  font-size: 1em;
+  text-align: center;
+  color: #ffffff;
+  background: rgba(1, 1, 1, 0.5);
+  width: 500px;
+  padding: 10px;
+  border: solid 3px #ffffff;
+  border-radius: 10px;
+}
+
+.slide__title-2--bottom {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 55%;
+  font-size: 3.5em;
+  color: #ffffff;
+  border-bottom: solid 3px #ffffff;
+}
+
+.slide__title-2--color {
+  color: black;
+}
