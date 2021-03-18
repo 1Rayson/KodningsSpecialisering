@@ -4,7 +4,7 @@ function myFunction() {
     document.getElementById("mydropdown").classList.toggle("show");
   }
 
-  window.onclick = function(event) {
+  document.onclick = function(event) {
     if (!event.target.matches('.dropdownbtnClick')) {
       const dropdowns = document.getElementsByClassName("dropdowncontentClick");
       let i;
@@ -31,9 +31,9 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlide");
-  var dots = document.getElementsByClassName("dot");
+  let i;
+  const slides = document.querySelectorAll(".mySlide");
+  const dots = document.querySelectorAll(".dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
