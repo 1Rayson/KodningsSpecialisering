@@ -1,0 +1,41 @@
+body {
+  font-family: "Roboto Mono", monospace;
+}
+header {
+  display: flex;
+}
+.topnav {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+.topnav #menu {
+  display: none;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #f18f01;
+}
+.topnav a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  color: #f18f01;
+}
+.fas {
+  padding: 2%;
+  font-size: 40px;
+  color: #f18f01;
+}
+main {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+img {
+  width: 30%;
+}

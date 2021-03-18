@@ -7,8 +7,14 @@
     <title>Menu City</title>
     <link rel="stylesheet" href="Tobias.css" />
     <script src="https://kit.fontawesome.com/1d8293010d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/hlx3wpi.css" />
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   </head>
+  <!--Video tutorials used to make the different elements on this webpage-->
+  <!--Sidebar: https://www.youtube.com/watch?v=O9l75KOB2pE-->
+  <!--Dropdown Menu: https://www.youtube.com/watch?v=Iyx_809qwoc-->
+  <!--Manual/auto image slider: https://www.youtube.com/watch?v=0wvrlOyGlq0&t=849s-->
+  <!--Embedded youtube videos: https://www.youtube.com/watch?v=OOy764mDtiA-->
   <body>
     <!--Header dropdown menu-->
     <nav class="dropdown-menu">
@@ -58,10 +64,10 @@
         </li>
       </ul>
     </nav>
+    <!--slide in sidebar-->
     <div class="btn">
       <span class="fas fa-bars"></span>
     </div>
-    <!--slide in sidebar-->
     <nav class="sidebar">
       <div class="menu-title">Side menu</div>
       <ul>
@@ -109,27 +115,44 @@
         <!--Radio buttons end-->
         <!--Slide images start-->
         <div class="slide first">
-          <h2 class="slide__title">
-            Slide in, <br />
-            Side menu
-          </h2>
-          <p class="slide__paragraph">
-            A side menu build using Html, CSS and Javascript. It consists of a title and different menu sections, that each has
-            their own submenus.
-          </p>
-          <h3 class="slide__comment">"Check the menu out by pressing the menu icon in the top left corner"</h3>
+          <div class="slide-1--grid">
+            <h2 class="slide__title">
+              Slide in <span class="slide__title--color">|</span> <br />
+              Side menu <span class="slide__title--color">|</span>
+            </h2>
+            <p class="slide__paragraph">
+              A side menu build using Html, CSS and Javascript. It consists of a title and different menu sections, that each has
+              their own submenus.
+            </p>
+            <h3 class="slide__comment">"Check the menu out by pressing the menu icon in the top left corner"</h3>
+          </div>
           <img src="assets/nature-waterfall-img.jpg" alt="A nature picture of a waterfall" />
         </div>
         <div class="slide">
-          <h2 class="slide__title-2"><span class="slide__title-2--color">Automatic</span> image slider</h2>
-          <p class="slide__paragraph-2">
-            A background image slider build using Html, CSS and Javascript. It can be controller manually pressing the 4 radio
-            buttons at the bottom of the screen, or you can whait the 7 seconds it takes to automatically go to the next picture.
-          </p>
-          <h2 class="slide__title-2--bottom"><span class="slide__title-2--color">Manual</span> image slider</h2>
+          <div class="slide-2--grid">
+            <h2 class="slide__title-2"><span class="slide__title-2--color">Automatic</span> image slider</h2>
+            <p class="slide__paragraph-2">
+              A background image slider build using Html, CSS and Javascript. It can be controller manually pressing the 4 radio
+              buttons at the bottom of the screen, or you can whait the 7 seconds it takes to automatically go to the next
+              picture.
+            </p>
+            <h2 class="slide__title-2--bottom"><span class="slide__title-2--color">Manual</span> image slider</h2>
+          </div>
           <img src="assets/mountain-nature-img.jpg" alt="A nature picture of a mountain" />
         </div>
         <div class="slide">
+          <div class="slide-3--grid">
+            <h2 class="slide__title-3">
+              <span class="slide__title-3--color">Drop</span><br />The<span class="slide__title-3--color"> menu</span>
+            </h2>
+            <p class="slide__paragraph-3">
+              The dropdown menu on this site is build using only Html and CSS. It consists of multiple menu points that each has
+              their own list items that appear as soon as you hover or click the menu point. There is also a section called
+              submenus, that other than having list items in it, also has another section og list items that appear when you hover
+              over it.
+            </p>
+            <h3 class="slide__comment-3">- Check out the menu at the top of the screen</h3>
+          </div>
           <img src="assets/canyon-nature-img.jpg" alt="A nature picture of a canyon" />
         </div>
         <div class="slide">
@@ -152,6 +175,73 @@
           <label for="radio4" class="manual-btn"></label>
         </div>
         <!--Manual navigation end-->
+      </div>
+    </div>
+    <!--Youtube videos that have been used to help me make this site-->
+    <!--Embedded youtube videos-->
+    <div class="tutorials-wrapper">
+      <h2 class="tutorials-title">Youtube tutorial videos!</h2>
+      <p class="tutorials-paragraph">
+        Down below you will find a list of different youtube tutorials that has been used to make this website.
+      </p>
+      <!--Embedded youtube videos-->
+      <div class="video-grid">
+        <section class="video">
+          <h3 class="video__title">Side menu bar</h3>
+          <p class="video__paragraph">A tutorial video showing how to build the side menu bar</p>
+          <div class="video-wrapper">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/O9l75KOB2pE"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+        <section class="video">
+          <h3 class="video__title">Drop-down menu bar</h3>
+          <p class="video__paragraph">A tutorial video showing how to build the drop-down menu</p>
+          <div class="video-wrapper">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Iyx_809qwoc"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+        <section class="video">
+          <h3 class="video__title">Image slider</h3>
+          <p class="video__paragraph">A tutorial video showing how to build a manual/automatic image slider</p>
+          <div class="video-wrapper">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/0wvrlOyGlq0"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+        <section class="video">
+          <h3 class="video__title">Embedded youtube videos</h3>
+          <p class="video__paragraph">A tutorial video showing how to add youtube videos to your webpage</p>
+          <div class="video-wrapper">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/OOy764mDtiA"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
       </div>
     </div>
 

@@ -23,7 +23,7 @@ $('nav ul li').click(function(){
     $(this).addClass("active").siblings().removeClass("active");
 });
 
-/* Automatic image slider */
+/* Automatic image slider 
 let counter = 1;
 setInterval(function(){
     document.getElementById('radio' + counter).checked = true;
@@ -31,4 +31,4 @@ setInterval(function(){
     if(counter > 4) {
         counter = 1;
     }
-},11000);
+},11000); */
