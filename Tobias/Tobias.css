@@ -8,13 +8,13 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #171717;
   height: 100vh;
 }
 
 /* Header dropdown menu */
 .dropdown-menu {
-  background: #1b1b1b;
+  background: #171717;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -47,7 +47,7 @@ body {
 .dropdown-menu ul li {
   display: inline-block;
   float: left;
-  background: #1b1b1b;
+  background: #171717;
   margin: 0 5px;
 }
 
@@ -60,13 +60,13 @@ body {
 }
 
 .dropdown-menu ul li a:hover {
-  box-shadow: 0 0 5px #18dbf5, 0 0 5px #18dbf591;
+  box-shadow: 0 0 5px #66fcf1, 0 0 5px #96fff8;
   border-radius: 5px;
-  color: #18dbf5;
+  color: #66fcf1;
 }
 
 .dropdown-menu ul ul li a:hover {
-  color: #18dbf5;
+  color: #66fcf1;
   box-shadow: none;
 }
 
@@ -76,7 +76,7 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: 0.3s;
-  border-top: 3px solid #18dbf5;
+  border-top: 3px solid #66fcf1;
 }
 
 .dropdown-menu ul ul ul {
@@ -124,12 +124,13 @@ body {
   left: 60px;
   height: 45px;
   width: 45px;
-  background: #1b1b1b;
+  background: #171717;
   border: 0px solid;
   border-radius: 5px;
   text-align: center;
   cursor: pointer;
   transition: left 0.4s ease-in-out;
+  z-index: 1;
 }
 
 .btn.click {
@@ -154,6 +155,7 @@ body {
   background: #1b1b1b;
   transition: left 0.4s ease-in-out;
   margin-top: 70.4px;
+  z-index: 1;
 }
 
 .sidebar.show {
@@ -161,7 +163,7 @@ body {
 }
 
 .sidebar .menu-title {
-  color: #18dbf5;
+  color: #ffffff;
   font-size: 25px;
   font-weight: bold;
   line-height: 65px;
@@ -195,9 +197,9 @@ body {
 }
 
 .sidebar ul li.active a {
-  color: #18dbf5;
+  color: #66fcf1;
   background: #1e1e1e;
-  border-left-color: #18dbf5;
+  border-left-color: #66fcf1;
 }
 
 .sidebar ul ul {
@@ -234,7 +236,7 @@ body {
 }
 
 .sidebar ul ul li a:focus {
-  color: #18dbf5 !important;
+  color: #66fcf1 !important;
   background: #1e1e1e !important;
 }
 
@@ -254,7 +256,7 @@ body {
 /* Sidebar menu desktop styles */
 @media screen and (min-width: 1100px) {
   .sidebar ul ul li a:hover {
-    color: #18dbf5 !important;
+    color: #66fcf1 !important;
     background: #1e1e1e !important;
   }
 }
@@ -499,36 +501,66 @@ body {
   border-radius: 5px;
 }
 
-
 /* Embedded youtube videoes */
-.tutorials-wrapper {
-  width: 70%;
-  margin: auto; 
+
+.tutorials {
+  display: grid;
+  grid-template-columns: fit-content 1fr;
+  grid-template-rows: fit-content repeat(3, 1fr);
+  justify-items: center;
+  padding: 60px 0;
+  grid-gap: 5px;
 }
 
-.tutorials-title {
-  font-size: 2em;
-  padding-top: 50px;
+.tutorials__title {
+  font-size: 2.5em;
+  color: #66fcf1;
 }
 
-.tutorials-paragraph {
-  font-size: 1.2em;
+.tutorials__paragraph {
+  font-size: 18px;
+  line-height: 22px;
+  width: 40%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.tutorials__border {
+  height: 2px;
+  width: 10%;
+  margin-top: 5px;
+  background: #66fcf1;
 }
 
 /* Video styling*/
+.video--background-color {
+  background: #45a29e;
+  padding: 50px 0px;
+}
+
+.videos-section-wrapper {
+  width: 60%;
+  margin: auto;
+}
+
 .video-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
   grid-gap: 50px;
-  padding: 50px 0px 50px 0px;
 }
 
 .video__title {
   color: #000000;
+  font-size: 25px;
 }
 
-/* Make the videos responsive */
+.video__paragraph {
+  font-size: 17px;
+  color: #ffffff;
+}
+
+/* Make the embedded videos responsive */
 .video {
   width: 100%;
   margin: 0 auto;
@@ -540,7 +572,7 @@ body {
   padding-top: 25px;
   height: 0px;
   width: 100%;
-} 
+}
 
 .video-wrapper iframe {
   position: absolute;
@@ -550,5 +582,29 @@ body {
   bottom: 0px;
   height: 100%;
   width: 100%;
-  z-index: -3;
-} 
+}
+
+/*bottom page quote and image */
+.bottom-page-note {
+  display: grid;
+  justify-content: center;
+  grid-gap: 1em;
+  padding: 25px 0;
+  grid-template-areas:
+    "smiley-image"
+    "message";
+}
+
+.bottom-page-note__image {
+  grid-area: smiley-image;
+  width: 20%;
+  justify-self: center;
+}
+
+.bottom-page-note__message {
+  grid-area: message;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+}
