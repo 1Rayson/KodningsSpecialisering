@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/1d8293010d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.typekit.net/hlx3wpi.css" />
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.lordicon.com//libs/frhvbuzj/lord-icon-2.0.2.js"></script>
   </head>
   <!--Video tutorials used to make the different elements on this webpage-->
   <!--Sidebar: https://www.youtube.com/watch?v=O9l75KOB2pE-->
@@ -18,7 +19,7 @@
   <body>
     <!--Header dropdown menu-->
     <nav class="dropdown-menu">
-      <h1 class="page-title">HavgårdCoding</h1>
+      <h1 class="page-title">Havgård<span class="page-title--color">Coding</span></h1>
       <ul>
         <li><a href="#">Home</a></li>
         <li>
@@ -128,41 +129,53 @@
               <h3 class="slide__comment">"Check the menu out by pressing the menu icon in the top left corner"</h3>
             </div>
           </div>
-          <img src="assets/Images/nature-waterfall-img.jpg" alt="A nature picture of a waterfall" />
+          <img src="assets/Images/dark-green-leafs-nature-img.jpg" alt="A nature picture of dark leafs" />
         </div>
         <div class="slide">
           <div class="slide-2-background">
             <div class="slide-2--grid">
-              <h2 class="slide__title-2"><span class="slide__title-2--color">Automatic</span> image slider</h2>
-              <p class="slide__paragraph-2">
+              <h2 class="slide-2__title"><span class="slide-2__title--color">Automatic</span> image slider</h2>
+              <p class="slide-2__paragraph">
                 A background image slider build using Html, CSS and Javascript. It can be controller manually pressing the 4 radio
                 buttons at the bottom of the screen, or you can whait the 7 seconds it takes to automatically go to the next
                 picture.
               </p>
-              <h2 class="slide__title-2--bottom"><span class="slide__title-2--color">Manual</span> image slider</h2>
+              <h2 class="slide-2__title--bottom"><span class="slide-2__title--color">Manual</span> image slider</h2>
             </div>
           </div>
-          <img src="assets/Images/mountain-nature-img.jpg" alt="A nature picture of a mountain" />
+          <img src="assets/Images/forrest-bridge-nature-img.jpg" alt="A picture of a bridge in a forrest" />
         </div>
         <div class="slide">
           <div class="slide-3-background">
             <div class="slide-3--grid">
-              <h2 class="slide__title-3">
-                <span class="slide__title-3--color">Drop</span><br />The<span class="slide__title-3--color"> menu</span>
+              <h2 class="slide-3__title">
+                <span class="slide-3__title--color">Drop</span><br />The<span class="slide-3__title--color"> menu</span>
               </h2>
-              <p class="slide__paragraph-3">
+              <p class="slide-3__paragraph">
                 The dropdown menu on this site is build using only Html and CSS. It consists of multiple menu points that each has
                 their own list items that appear as soon as you hover or click the menu point. There is also a section called
                 submenus, that other than having list items in it, also has another section og list items that appear when you
                 hover over it.
               </p>
-              <h3 class="slide__comment-3">- Check out the menu at the top of the screen</h3>
+              <h3 class="slide-3__comment">- Check out the menu at the top of the screen</h3>
             </div>
           </div>
-          <img src="assets/Images/canyon-nature-img.jpg" alt="A nature picture of a canyon" />
+          <img src="assets/Images/green-leafs-nature-img.jpg" alt="A picture of green leafs" />
         </div>
         <div class="slide">
-          <img src="assets/Images/river-nature-picture.jpg" alt="A nature picture of a river" />
+          <div class="slide-4-background">
+            <div class="slide-4--grid">
+              <h2 class="slide-4__title">Embedded videos</h2>
+              <span class="slide-4__title--border"></span>
+              <p class="slide-4__paragraph">
+                A series of videos embedded on the website using the link found on youtube. It is being displayed in a grid, with
+                text describing the content of the videos.
+              </p>
+              <span class="slide-4__paragraph--border"></span>
+              <h3 class="slide-4__comment">"Scroll further down to see the videos"</h3>
+            </div>
+          </div>
+          <img src="assets/Images/forrest-road-nature-img.jpg" alt="A nature picture of a forrest road" />
         </div>
         <!--Slide images end-->
         <!--Automatic navigation start-->
@@ -256,8 +269,15 @@
       </div>
     </div>
     <section class="bottom-page-note">
-      <img class="bottom-page-note__image" src="assets/Icons/smilin-icon.svg" alt="An image of a smiley smiling" />
-      <p class="bottom-page-note__message">This is the end of the page. <br />Thanks for visiting!</p>
+      <lord-icon
+        class="bottom-page-note__image"
+        src="https://cdn.lordicon.com//pithnlch.json"
+        trigger="loop"
+        colors="primary:#ffffff,secondary:#66fcf1"
+        style="width: 128px; height: 128px"
+      >
+      </lord-icon>
+      <p class="bottom-page-note__message">This is the end of the page <br />Thanks for visiting</p>
     </section>
 
     <script src="Tobias.js"></script>
