@@ -9,7 +9,6 @@
 
 body {
   background-color: #171717;
-  height: 100vh;
 }
 
 /* Header dropdown menu */
@@ -93,7 +92,11 @@ body {
   width: 150px;
   float: none;
   display: list-item;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-menu ul ul li:last-child {
+  border: none;
 }
 
 .dropdown-menu ul li:hover > ul {
@@ -159,7 +162,7 @@ body {
   left: -250px;
   background: #1b1b1b;
   transition: left 0.4s ease-in-out;
-  margin-top: 70.4px;
+  margin-top: 70.5px;
   z-index: 1;
 }
 
@@ -173,7 +176,6 @@ body {
   font-weight: bold;
   line-height: 80px;
   text-align: center;
-  letter-spacing: 1px;
   font-weight: 600;
 }
 
